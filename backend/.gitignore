@@ -1,0 +1,45 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Build / package artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+wheels/
+
+# Test / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Type checkers / linters
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.dmypy.json
+dmypy.json
+
+# Runtime / local files
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.log
+logs/
+*.db
+*.sqlite
+*.sqlite3
+
+# Alembic generated cache only; keep migration files tracked
+migrations/**/__pycache__/
+*.pyc
