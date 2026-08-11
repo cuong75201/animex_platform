@@ -1,38 +1,24 @@
-# Dependencies
-node_modules/
-
-# Build outputs
-dist/
-build/
-.next/
-.nuxt/
-.svelte-kit/
-out/
-
-# Tool caches
-.vite/
-.turbo/
-.parcel-cache/
-.eslintcache
-.cache/
-
-# Test / coverage
-coverage/
-.nyc_output/
-
-# Environment files
-.env
-.env.*
-!.env.example
-!.env.*.example
-
 # Logs
+logs
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+lerna-debug.log*
 
-# Hosting / generated local files
-.vercel/
-.netlify/
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

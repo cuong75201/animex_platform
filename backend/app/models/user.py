@@ -19,6 +19,8 @@ class User(SQLModel, table=True):
     username: str = Field(unique=True, nullable=False, max_length=100)
     email: EmailStr = Field(unique=True, nullable=False, max_length=255)
     password_hash: str = Field(nullable=False, max_length=255)
+    full_name: str | None = Field(default=None, max_length=150)
+    description: str | None = Field(default=None, max_length=500)
     gender: User_gender | None = None
     role: User_Role = Field(default=User_Role.user, nullable=False)
     status: User_status = Field(default=User_status.email_unverified, nullable=False)
